@@ -17,6 +17,8 @@
 		BDD800DD26FB482000AE3CBA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD800DC26FB482000AE3CBA /* BaseViewController.swift */; };
 		BDD800DF26FB4A2E00AE3CBA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD800DE26FB4A2E00AE3CBA /* MainViewController.swift */; };
 		BDD800E226FB4BE400AE3CBA /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD800E126FB4BE400AE3CBA /* MainTableViewCell.swift */; };
+		BDD800E526FB529F00AE3CBA /* KakaoNoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD800E426FB529F00AE3CBA /* KakaoNoticeViewController.swift */; };
+		BDD800E726FB551B00AE3CBA /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD800E626FB551B00AE3CBA /* Preview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		BDD800DC26FB482000AE3CBA /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		BDD800DE26FB4A2E00AE3CBA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BDD800E126FB4BE400AE3CBA /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		BDD800E426FB529F00AE3CBA /* KakaoNoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoNoticeViewController.swift; sourceTree = "<group>"; };
+		BDD800E626FB551B00AE3CBA /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 		F2426885A66CF15132084BD1 /* Pods-UIChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIChallenge.debug.xcconfig"; path = "Target Support Files/Pods-UIChallenge/Pods-UIChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				BDD800E026FB4A6E00AE3CBA /* Main */,
+				BDD800E326FB528200AE3CBA /* KakaoNotice */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 				BDD800D726FB470C00AE3CBA /* UIStackView+.swift */,
 				BDD800D926FB473000AE3CBA /* UIView+.swift */,
 				BDD800DC26FB482000AE3CBA /* BaseViewController.swift */,
+				BDD800E626FB551B00AE3CBA /* Preview.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -153,6 +159,14 @@
 				BDD800E126FB4BE400AE3CBA /* MainTableViewCell.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		BDD800E326FB528200AE3CBA /* KakaoNotice */ = {
+			isa = PBXGroup;
+			children = (
+				BDD800E426FB529F00AE3CBA /* KakaoNoticeViewController.swift */,
+			);
+			path = KakaoNotice;
 			sourceTree = "<group>";
 		};
 		ED46ED64EF11943CAF537563 /* Pods */ = {
@@ -278,7 +292,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDD800E526FB529F00AE3CBA /* KakaoNoticeViewController.swift in Sources */,
 				BDD800DD26FB482000AE3CBA /* BaseViewController.swift in Sources */,
+				BDD800E726FB551B00AE3CBA /* Preview.swift in Sources */,
 				BDD800DA26FB473000AE3CBA /* UIView+.swift in Sources */,
 				BDD800D826FB470C00AE3CBA /* UIStackView+.swift in Sources */,
 				BDD800B826FB3B2200AE3CBA /* AppDelegate.swift in Sources */,
