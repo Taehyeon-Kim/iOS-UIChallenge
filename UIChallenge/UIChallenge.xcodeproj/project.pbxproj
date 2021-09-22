@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5463A5B8CFD0E50445790F51 /* Pods_UIChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4051B070985C62A3C4AC48D8 /* Pods_UIChallenge.framework */; };
 		BDD800B826FB3B2200AE3CBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD800B726FB3B2200AE3CBA /* AppDelegate.swift */; };
 		BDD800BA26FB3B2200AE3CBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD800B926FB3B2200AE3CBA /* SceneDelegate.swift */; };
 		BDD800BC26FB3B2200AE3CBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD800BB26FB3B2200AE3CBA /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4051B070985C62A3C4AC48D8 /* Pods_UIChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B48A075199852F88F739922 /* Pods-UIChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIChallenge.release.xcconfig"; path = "Target Support Files/Pods-UIChallenge/Pods-UIChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		BDD800B426FB3B2200AE3CBA /* UIChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD800B726FB3B2200AE3CBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDD800B926FB3B2200AE3CBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		BDD800C026FB3B2400AE3CBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDD800C326FB3B2400AE3CBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDD800C526FB3B2400AE3CBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2426885A66CF15132084BD1 /* Pods-UIChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIChallenge.debug.xcconfig"; path = "Target Support Files/Pods-UIChallenge/Pods-UIChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5463A5B8CFD0E50445790F51 /* Pods_UIChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A75A5EC6EBA26CC1C91994ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4051B070985C62A3C4AC48D8 /* Pods_UIChallenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BDD800AB26FB3B2200AE3CBA = {
 			isa = PBXGroup;
 			children = (
 				BDD800B626FB3B2200AE3CBA /* UIChallenge */,
 				BDD800B526FB3B2200AE3CBA /* Products */,
+				ED46ED64EF11943CAF537563 /* Pods */,
+				A75A5EC6EBA26CC1C91994ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = UIChallenge;
 			sourceTree = "<group>";
 		};
+		ED46ED64EF11943CAF537563 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2426885A66CF15132084BD1 /* Pods-UIChallenge.debug.xcconfig */,
+				4B48A075199852F88F739922 /* Pods-UIChallenge.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDD800C826FB3B2400AE3CBA /* Build configuration list for PBXNativeTarget "UIChallenge" */;
 			buildPhases = (
+				1E7DF7063B92381F711B39A5 /* [CP] Check Pods Manifest.lock */,
 				BDD800B026FB3B2200AE3CBA /* Sources */,
 				BDD800B126FB3B2200AE3CBA /* Frameworks */,
 				BDD800B226FB3B2200AE3CBA /* Resources */,
+				EDA7F5FD374AA2C3EFC78426 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E7DF7063B92381F711B39A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UIChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDA7F5FD374AA2C3EFC78426 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIChallenge/Pods-UIChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIChallenge/Pods-UIChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UIChallenge/Pods-UIChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BDD800B026FB3B2200AE3CBA /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		BDD800C926FB3B2400AE3CBA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2426885A66CF15132084BD1 /* Pods-UIChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		BDD800CA26FB3B2400AE3CBA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B48A075199852F88F739922 /* Pods-UIChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
