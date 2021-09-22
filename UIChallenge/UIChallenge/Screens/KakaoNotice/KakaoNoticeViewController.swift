@@ -14,13 +14,30 @@
 
 import UIKit
 
-class KakaoNoticeViewController: UIViewController {
+class KakaoNoticeViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    }
+    
+    override func setupAttribute() {
+        view.backgroundColor = .red
+    }
+    
+    override func setupLayout() {
         
     }
 }
 
+#if canImport(SwiftUI) && DEBUG
+import SwiftUI
 
+struct KakaoNoticePreview: PreviewProvider {
+    static var previews: some View {
+
+        KakaoNoticeViewController()
+            .showPreview(.iPhone12)
+    }
+}
+#endif
