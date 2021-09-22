@@ -3,17 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5463A5B8CFD0E50445790F51 /* Pods_UIChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4051B070985C62A3C4AC48D8 /* Pods_UIChallenge.framework */; };
 		BDD800B826FB3B2200AE3CBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD800B726FB3B2200AE3CBA /* AppDelegate.swift */; };
-		BDD800BA26FB3B2200AE3CBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD800B926FB3B2200AE3CBA /* SceneDelegate.swift */; };
-		BDD800BC26FB3B2200AE3CBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD800BB26FB3B2200AE3CBA /* ViewController.swift */; };
 		BDD800BF26FB3B2200AE3CBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD800BD26FB3B2200AE3CBA /* Main.storyboard */; };
 		BDD800C126FB3B2400AE3CBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDD800C026FB3B2400AE3CBA /* Assets.xcassets */; };
 		BDD800C426FB3B2400AE3CBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD800C226FB3B2400AE3CBA /* LaunchScreen.storyboard */; };
+		BDD800D826FB470C00AE3CBA /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD800D726FB470C00AE3CBA /* UIStackView+.swift */; };
+		BDD800DA26FB473000AE3CBA /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD800D926FB473000AE3CBA /* UIView+.swift */; };
+		BDD800DD26FB482000AE3CBA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD800DC26FB482000AE3CBA /* BaseViewController.swift */; };
+		BDD800DF26FB4A2E00AE3CBA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD800DE26FB4A2E00AE3CBA /* MainViewController.swift */; };
+		BDD800E226FB4BE400AE3CBA /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD800E126FB4BE400AE3CBA /* MainTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,12 +24,15 @@
 		4B48A075199852F88F739922 /* Pods-UIChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIChallenge.release.xcconfig"; path = "Target Support Files/Pods-UIChallenge/Pods-UIChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		BDD800B426FB3B2200AE3CBA /* UIChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD800B726FB3B2200AE3CBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BDD800B926FB3B2200AE3CBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BDD800BB26FB3B2200AE3CBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BDD800BE26FB3B2200AE3CBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BDD800C026FB3B2400AE3CBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDD800C326FB3B2400AE3CBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDD800C526FB3B2400AE3CBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDD800D726FB470C00AE3CBA /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
+		BDD800D926FB473000AE3CBA /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		BDD800DC26FB482000AE3CBA /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		BDD800DE26FB4A2E00AE3CBA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		BDD800E126FB4BE400AE3CBA /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		F2426885A66CF15132084BD1 /* Pods-UIChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIChallenge.debug.xcconfig"; path = "Target Support Files/Pods-UIChallenge/Pods-UIChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,15 +77,82 @@
 		BDD800B626FB3B2200AE3CBA /* UIChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				BDD800B726FB3B2200AE3CBA /* AppDelegate.swift */,
-				BDD800B926FB3B2200AE3CBA /* SceneDelegate.swift */,
-				BDD800BB26FB3B2200AE3CBA /* ViewController.swift */,
-				BDD800BD26FB3B2200AE3CBA /* Main.storyboard */,
-				BDD800C026FB3B2400AE3CBA /* Assets.xcassets */,
-				BDD800C226FB3B2400AE3CBA /* LaunchScreen.storyboard */,
-				BDD800C526FB3B2400AE3CBA /* Info.plist */,
+				BDD800D026FB43F000AE3CBA /* App */,
+				BDD800D526FB46BC00AE3CBA /* Common */,
+				BDD800D226FB44BB00AE3CBA /* Resources */,
+				BDD800D126FB447100AE3CBA /* Screens */,
+				BDD800CF26FB432F00AE3CBA /* Support Files */,
 			);
 			path = UIChallenge;
+			sourceTree = "<group>";
+		};
+		BDD800CF26FB432F00AE3CBA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BDD800C526FB3B2400AE3CBA /* Info.plist */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		BDD800D026FB43F000AE3CBA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BDD800B726FB3B2200AE3CBA /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BDD800D126FB447100AE3CBA /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				BDD800E026FB4A6E00AE3CBA /* Main */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		BDD800D226FB44BB00AE3CBA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BDD800D426FB46A000AE3CBA /* Storyboards */,
+				BDD800C026FB3B2400AE3CBA /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BDD800D426FB46A000AE3CBA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BDD800BD26FB3B2200AE3CBA /* Main.storyboard */,
+				BDD800C226FB3B2400AE3CBA /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		BDD800D526FB46BC00AE3CBA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BDD800D626FB46ED00AE3CBA /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BDD800D626FB46ED00AE3CBA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BDD800D726FB470C00AE3CBA /* UIStackView+.swift */,
+				BDD800D926FB473000AE3CBA /* UIView+.swift */,
+				BDD800DC26FB482000AE3CBA /* BaseViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BDD800E026FB4A6E00AE3CBA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BDD800DE26FB4A2E00AE3CBA /* MainViewController.swift */,
+				BDD800E126FB4BE400AE3CBA /* MainTableViewCell.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		ED46ED64EF11943CAF537563 /* Pods */ = {
@@ -88,7 +161,6 @@
 				F2426885A66CF15132084BD1 /* Pods-UIChallenge.debug.xcconfig */,
 				4B48A075199852F88F739922 /* Pods-UIChallenge.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -206,9 +278,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDD800BC26FB3B2200AE3CBA /* ViewController.swift in Sources */,
+				BDD800DD26FB482000AE3CBA /* BaseViewController.swift in Sources */,
+				BDD800DA26FB473000AE3CBA /* UIView+.swift in Sources */,
+				BDD800D826FB470C00AE3CBA /* UIStackView+.swift in Sources */,
 				BDD800B826FB3B2200AE3CBA /* AppDelegate.swift in Sources */,
-				BDD800BA26FB3B2200AE3CBA /* SceneDelegate.swift in Sources */,
+				BDD800E226FB4BE400AE3CBA /* MainTableViewCell.swift in Sources */,
+				BDD800DF26FB4A2E00AE3CBA /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,7 +433,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W895YM7ZMH;
-				INFOPLIST_FILE = UIChallenge/Info.plist;
+				INFOPLIST_FILE = "UIChallenge/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,7 +453,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W895YM7ZMH;
-				INFOPLIST_FILE = UIChallenge/Info.plist;
+				INFOPLIST_FILE = "UIChallenge/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
