@@ -19,6 +19,7 @@
 		BDD800E226FB4BE400AE3CBA /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD800E126FB4BE400AE3CBA /* MainTableViewCell.swift */; };
 		BDD800E526FB529F00AE3CBA /* KakaoNoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD800E426FB529F00AE3CBA /* KakaoNoticeViewController.swift */; };
 		BDD800E726FB551B00AE3CBA /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD800E626FB551B00AE3CBA /* Preview.swift */; };
+		BDD800E926FB62C000AE3CBA /* NoticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD800E826FB62C000AE3CBA /* NoticeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		BDD800E126FB4BE400AE3CBA /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		BDD800E426FB529F00AE3CBA /* KakaoNoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoNoticeViewController.swift; sourceTree = "<group>"; };
 		BDD800E626FB551B00AE3CBA /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
+		BDD800E826FB62C000AE3CBA /* NoticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeView.swift; sourceTree = "<group>"; };
 		F2426885A66CF15132084BD1 /* Pods-UIChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIChallenge.debug.xcconfig"; path = "Target Support Files/Pods-UIChallenge/Pods-UIChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				BDD800E426FB529F00AE3CBA /* KakaoNoticeViewController.swift */,
+				BDD800E826FB62C000AE3CBA /* NoticeView.swift */,
 			);
 			path = KakaoNotice;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				BDD800E526FB529F00AE3CBA /* KakaoNoticeViewController.swift in Sources */,
 				BDD800DD26FB482000AE3CBA /* BaseViewController.swift in Sources */,
 				BDD800E726FB551B00AE3CBA /* Preview.swift in Sources */,
+				BDD800E926FB62C000AE3CBA /* NoticeView.swift in Sources */,
 				BDD800DA26FB473000AE3CBA /* UIView+.swift in Sources */,
 				BDD800D826FB470C00AE3CBA /* UIStackView+.swift in Sources */,
 				BDD800B826FB3B2200AE3CBA /* AppDelegate.swift in Sources */,

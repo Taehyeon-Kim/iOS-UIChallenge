@@ -14,19 +14,22 @@
 
 import UIKit
 
-class KakaoNoticeViewController: BaseViewController {
+class KakaoNoticeViewController: BaseViewController, NoticeViewDelegate {
+    func isTapped(flag: Bool) {
+        showAnimation(flag: flag)
+    }
     
     // MARK: - Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     // MARK: - Setup
     
     override func setupAttribute() {
         title = "김태현"
+        noticeView.delegate = self
     }
     
     override func setupLayout() {
@@ -43,10 +46,39 @@ class KakaoNoticeViewController: BaseViewController {
         }
         
         noticeView.snp.makeConstraints {
-            $0.top.equalToSuperview().offset(topHeight + 10)    // 임의로 네비게이션 바 높이만큼 위치를 조정 (navigationBar height + offset)
-            $0.left.equalToSuperview().offset(10)
-            $0.right.equalToSuperview().inset(10)
-            $0.height.equalTo(50)
+            $0.top.equalToSuperview().offset(topHeight)    // 임의로 네비게이션 바 높이만큼 위치를 조정 (navigationBar height + offset)
+            $0.left.equalToSuperview().offset(5)
+            $0.right.equalToSuperview().inset(5)
+            $0.height.equalTo(55)
+        }
+        
+        searchIcon.snp.makeConstraints {
+            $0.height.width.equalTo(24)
+        }
+    }
+    
+    private func showAnimation(flag: Bool) {
+        if flag {
+            UIView.animate(withDuration: 0.1) {
+                self.noticeView.snp.updateConstraints {
+                    $0.height.equalTo(110)
+                }
+                self.noticeView.toggleButton.transform = CGAffineTransform(rotationAngle: .pi)
+                self.view.layoutIfNeeded()
+            } completion: { _ in
+                self.noticeView.noticeLabel.numberOfLines = 0
+                self.noticeView.showProperties()
+            }
+        } else {
+            UIView.animate(withDuration: 0.1) {
+                self.noticeView.snp.updateConstraints {
+                    $0.height.equalTo(55)
+                }
+                self.noticeView.toggleButton.transform = CGAffineTransform(rotationAngle: 0)
+                self.view.layoutIfNeeded()
+                self.noticeView.noticeLabel.numberOfLines = 2
+                self.noticeView.hideProperties()
+            }
         }
     }
     
@@ -65,23 +97,28 @@ class KakaoNoticeViewController: BaseViewController {
     }
     
     var topHeight: CGFloat {
-        return statusBarHeight + topInset + navigationBarHeight
+        return statusBarHeight + topInset
     }
     
     // MARK: - UI Properties
     
     /// 컨텐츠 뷰
     private let contentView = UIView().then {
-        $0.backgroundColor = .red
+        $0.backgroundColor = #colorLiteral(red: 0.6470588235, green: 0.7294117647, blue: 0.8078431373, alpha: 1)
     }
     /// 채팅 입력 뷰
     private let chatInputView = UIView().then {
-        $0.backgroundColor = .blue
+        $0.backgroundColor = .white
     }
     /// 공지사항 뷰
-    private let noticeView = UIView().then {
-        $0.backgroundColor = .green
+    private let noticeView = NoticeView()
+    
+    let searchIcon = UIImageView().then {
+        $0.image = UIImage(named: "searchIcon")
     }
+    
+    let packageIcon = UIBarButtonItem(image: UIImage(named: "packageIcon"), style: .plain, target: self, action: nil)
+    let menuIcon = UIBarButtonItem(image: UIImage(named: "menuIcon"), style: .plain, target: self, action: nil)
 }
 
 // MARK: - Preview
